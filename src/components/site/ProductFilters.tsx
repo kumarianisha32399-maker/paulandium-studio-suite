@@ -95,7 +95,7 @@ export function ProductFilters({
           max={MAX_PRICE}
           step={5000}
           value={[filters.max]}
-          onValueChange={([v]) => onChange({ ...filters, max: v })}
+          onValueChange={([v]) => onChange({ ...filters, max: v ?? MAX_PRICE })}
         />
         <p className="mt-2 text-xs text-muted-foreground">Up to {inr(filters.max)}</p>
       </div>

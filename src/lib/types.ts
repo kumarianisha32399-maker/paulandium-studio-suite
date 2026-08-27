@@ -27,7 +27,7 @@ export interface Product {
   dimensions: string;
   description: string;
   image: string;
-  badge?: "Bestseller" | "New" | "Limited";
+  badge?: "Bestseller" | "New" | "Limited" | undefined;
   inStock: boolean;
 }
 
